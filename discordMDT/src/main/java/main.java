@@ -22,7 +22,7 @@ public class main {
         // Strings
         String username = ("Username: " + api.getUserById(userid).get().getDiscriminatedName());
         String creationDate = ("Date of Creation: " + api.getUserById(userid).get().getCreationTimestamp());
-        String userStatus = ("User Status: " + api.getUserById(userid).get().getStatus());
+        String userStatus = ("User Status: " + api.getUserById(userid).get().getStatus().toString());
         String isBot = ("null");
         if (api.getUserById(userid).get().isBot()) {
             isBot = ("isBot: TRUE");
